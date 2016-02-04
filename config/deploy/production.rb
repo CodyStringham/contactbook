@@ -1,5 +1,7 @@
 lock '3.4.0'
 
+server '54.68.241.165', user: 'deploy', roles: %w{web app db}
+
 set :application, 'contactbook'
 set :repo_url, 'git@github.com:devdatta/contactbook.git' # Edit this to match your repository
 set :branch, :master
